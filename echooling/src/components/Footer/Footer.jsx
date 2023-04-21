@@ -6,11 +6,16 @@ import {
   ListItem,
   ListItemText,
   TextField,
+  Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import EastIcon from "@mui/icons-material/East";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GoogleIcon from "@mui/icons-material/Google";
+import { Link } from "react-router-dom";
 
 const aboutUs = [
   "About",
@@ -67,6 +72,7 @@ const Footer = () => {
         backgroundColor: "rgb(15,18,22)",
         color: "white",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -74,7 +80,8 @@ const Footer = () => {
       <Box
         sx={{
           width: "80%",
-
+          borderBottom: "2px solid gray",
+          paddingBottom: "30px",
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "left",
@@ -249,7 +256,49 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
-      <Box></Box>
+      <Box sx={{ width: "80%" }}>
+        <footer
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            paddingTop: "20px",
+            paddingBottom: "20px",
+          }}
+        >
+          <Typography
+            variant="body2"
+            color="white"
+            align="left"
+            style={{ width: "40%" }}
+          >
+            © 2022 Echooling. All Rights Reserved
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              width: "30%",
+            }}
+          >
+            <text
+              style={{ fontSize: "20px", fontWeight: 500, marginRight: "20px" }}
+            >
+              Follow us
+            </text>
+            <Link to="#" style={{ color: "gray" }}>
+              <FacebookIcon />
+            </Link>
+            <Link to="#" style={{ color: "gray" }}>
+              <TwitterIcon />
+            </Link>
+            <Link to="#" style={{ color: "gray" }}>
+              <GoogleIcon />
+            </Link>
+          </Box>
+        </footer>
+      </Box>
     </Box>
   );
 };
