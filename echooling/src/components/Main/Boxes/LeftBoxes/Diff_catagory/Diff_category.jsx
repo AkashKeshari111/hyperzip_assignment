@@ -31,7 +31,7 @@ const onHandleClickFAQs=()=>{
 
   return (
     <>
-    <Box sx={{display:"flex" ,alignItems:"center",justifyContent:"left", width:"100%",marginTop:"50px",paddingTop:"20px",paddingBottom:"20px",height:"50px", border:"1px solid rgb(242,244,249)",backgroundColor:"rgb(242,244,249)"}}>
+    <Box sx={{display:"flex" ,alignItems:"center",justifyContent:"left", width:"100%",marginTop:"50px",paddingTop:"20px",paddingBottom:"20px",height:"50px", border:"1px solid rgb(242,244,249)",backgroundColor:"rgb(242,244,249)", "@media (max-width: 550px)": {display:"grid",gridTemplateColumns:"repeat(2,1fr)",gridTemplateRows:"auto",justifyContent:"center",alignItems:"center"}}}>
   
       <ButtonHoc el={"Description"} onHandleClickCourse={onHandleClickDescription}/>
       <ButtonHoc el={"Curriculum"} onHandleClickCourse={onHandleClickCurriculum}/>
