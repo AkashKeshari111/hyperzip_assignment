@@ -15,7 +15,8 @@ const Headers = () => {
         justifyContent: "space-between",
         position:"fixed",
         top:0,
-        
+        zIndex:1000
+
       }}
     >
       <Box

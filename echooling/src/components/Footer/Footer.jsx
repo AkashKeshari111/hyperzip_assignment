@@ -75,11 +75,12 @@ const Footer = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        marginTop:"50px"
       }}
     >
       <Box
         sx={{
-          width: "80%",
+          width: "85%",
           borderBottom: "2px solid gray",
           paddingBottom: "30px",
           display: "flex",
@@ -272,7 +273,7 @@ const Footer = () => {
             align="left"
             style={{ width: "40%" }}
           >
-            © 2022 Echooling. All Rights Reserved
+            © 2022 <span style={{color:"rgb(210,9,43)"}}>Echooling</span>. All Rights Reserved
           </Typography>
           <Box
             sx={{
