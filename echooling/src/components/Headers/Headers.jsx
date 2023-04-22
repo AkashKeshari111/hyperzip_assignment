@@ -13,6 +13,9 @@ const Headers = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        position:"fixed",
+        top:0,
+        
       }}
     >
       <Box
