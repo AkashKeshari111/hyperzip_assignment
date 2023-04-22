@@ -29,6 +29,7 @@ const Information = () => {
       sx={{
         border: "1px solid lightGray",
         boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+        "@media (max-width: 765px)":{ marginBottom:"30px"}
       }}
     >
       <Box
@@ -40,6 +41,7 @@ const Information = () => {
           dispaly: "flex",
           alignItems: "center",
           margin: "auto",
+       
         }}
       >
         <Button

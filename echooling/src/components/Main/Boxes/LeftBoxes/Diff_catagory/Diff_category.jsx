@@ -1,35 +1,37 @@
 import { Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import ButtonHoc from "../../../../HOC/ButtonHoc";
+import Description from "./Description";
+import Curriculum from "./Curriculum";
 
 
 const Diff_category = () => {
 
-const [content,setContent]=useState("");
+const [content,setContent]=useState(<Description/>);
 
 const onHandleClickDescription=()=>{
-      setContent("a")
+      setContent(<Description/>)
 }
 
 
 const onHandleClickCurriculum=()=>{
-  setContent("b")
+  setContent(<Curriculum/>)
 }
 
 
 const onHandleClickReviews=()=>{
-  setContent("c")
+  setContent("on working Reviews page")
 }
 
 
 const onHandleClickFAQs=()=>{
-  setContent("d")
+  setContent("on working FAQs Page")
 }
 
 
   return (
     <>
-    <Box sx={{display:"flex" ,alignItems:"center",justifyContent:"left",gap:"3%", width:"95%",marginTop:"50px",padding:"20px",height:"50px", border:"1px solid rgb(242,244,249)",backgroundColor:"rgb(242,244,249)"}}>
+    <Box sx={{display:"flex" ,alignItems:"center",justifyContent:"left", width:"100%",marginTop:"50px",paddingTop:"20px",paddingBottom:"20px",height:"50px", border:"1px solid rgb(242,244,249)",backgroundColor:"rgb(242,244,249)"}}>
   
       <ButtonHoc el={"Description"} onHandleClickCourse={onHandleClickDescription}/>
       <ButtonHoc el={"Curriculum"} onHandleClickCourse={onHandleClickCurriculum}/>

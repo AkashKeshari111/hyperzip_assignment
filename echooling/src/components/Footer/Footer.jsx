@@ -75,7 +75,7 @@ const Footer = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop:"50px"
+        marginTop: "50px",
       }}
     >
       <Box
@@ -86,6 +86,16 @@ const Footer = () => {
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "left",
+          "@media (max-width: 850px)": {
+            display: "grid",
+            gridTemplateColumns: "repeat(2,1fr)",
+            gridTemplateRows: "auto",
+          },
+          "@media (max-width: 500px)": {
+            display: "grid",
+            gridTemplateColumns: "repeat(1,1fr)",
+            gridTemplateRows: "auto",
+          },
         }}
       >
         {/* //first box */}
@@ -97,6 +107,7 @@ const Footer = () => {
             textAlign: "left",
             paddingLeft: "5px",
             paddingRight: "5%",
+            "@media (max-width: 850px)": { width: "90%" },
           }}
         >
           <img alt="echooling logo" src="/echooling_logo.png" />
@@ -163,6 +174,7 @@ const Footer = () => {
             flexWrap: "wrap",
             textAlign: "left",
             paddingLeft: "5px",
+            "@media (max-width: 850px)": { width: "max-content", width: "45%" },
           }}
         >
           <h3>AboutUs</h3>
@@ -198,6 +210,7 @@ const Footer = () => {
             flexWrap: "wrap",
             textAlign: "left",
             paddingLeft: "5px",
+            "@media (max-width: 850px)": { width: "max-content", width: "45%" },
           }}
         >
           <h2>Useful Links</h2>
@@ -229,13 +242,16 @@ const Footer = () => {
         <Box
           sx={{
             width: "27%",
-
             flexWrap: "wrap",
             textAlign: "left",
+            "@media (max-width: 850px)": { width: "min-content", width: "45%" },
+            "@media (max-width: 500px)": { width: "100%" },
           }}
         >
           <h2>Newsletter</h2>
-          <p>Get the latest Echooling news delivered to you inbox</p>
+          <p style={{ flexWrap: "wrap" }}>
+            Get the latest Echooling news delivered to you inbox
+          </p>
           <Box style={{ display: "flex", marginTop: "15%" }}>
             <TextField
               type="email"
@@ -257,7 +273,12 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ width: "80%" }}>
+      <Box
+        sx={{
+          width: "80%",
+         
+        }}
+      >
         <footer
           style={{
             display: "flex",
@@ -265,22 +286,34 @@ const Footer = () => {
             justifyContent: "space-between",
             paddingTop: "20px",
             paddingBottom: "20px",
+            "@media (max-width: 500px)": {
+              display: "block",
+              justifyContent: "center",
+            },
           }}
         >
           <Typography
             variant="body2"
             color="white"
             align="left"
-            style={{ width: "40%" }}
+            style={{ width: "40%" ,
+            "@media (max-width: 500px)": {
+            alignItems:"center",
+            width: "100%"
+            },
+          }}
           >
-            © 2022 <span style={{color:"rgb(210,9,43)"}}>Echooling</span>. All Rights Reserved
+            © 2022 <span style={{ color: "rgb(210,9,43)" }}>Echooling</span>.
+            All Rights Reserved
           </Typography>
+
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "space-evenly",
               width: "30%",
+             
             }}
           >
             <text

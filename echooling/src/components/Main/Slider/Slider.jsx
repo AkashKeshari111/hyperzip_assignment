@@ -13,16 +13,23 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 
 const Slider = () => {
   return (
-    <Card sx={{ height: "78vh", width: "100%" }}>
+    <Card sx={{ height: "80vh", width: "100%" }}>
       <CardMedia
         component="img"
         image={"/image1.jpg"}
         alt={"image1"}
-        style={{ zIndex: -1, width: "100%", height: "100%" }}
+        style={{
+          zIndex: -1,
+          width: "100%",
+          height: "100%",
+          "@media (max-width: 1300px)": { width: "100%" },
+          "@media (max-width: 850px)": { width: "100%" },
+
+          "@media (max-width: 500px)": { width: "100%" },
+        }}
       />
       <CardContent
         sx={{
-     
           marginTop: "-450px",
           zIndex: 10,
           width: "100%",
@@ -44,6 +51,12 @@ const Slider = () => {
             alignItems: "flex-start",
             justifyContent: "center",
             textAlign: "left",
+            border: "1px solid red",
+
+            "@media (max-width: 1300px)": { width: "70%" },
+            "@media (max-width: 850px)": { width: "90%" },
+
+            "@media (max-width: 500px)": { width: "100%" },
           }}
         >
           <Button
@@ -73,7 +86,13 @@ const Slider = () => {
               justifyContent: "space-evenly",
               width: "60%",
               color: "white",
-            
+              border: "1px solid blue",
+              width: "max-content",
+              "@media (max-width: 500px)": {
+                width: "100%",
+                display: "block",
+                lineHeight: 2,
+              },
             }}
           >
             <Box
@@ -82,6 +101,7 @@ const Slider = () => {
                 alignItems: "center",
                 justifyContent: "left",
                 width: "max-content",
+                "@media (max-width: 500px)": { marginLeft: "18px" },
               }}
             >
               <Avatar
@@ -99,7 +119,7 @@ const Slider = () => {
                 width: "max-content",
               }}
             >
-             &nbsp;&nbsp;&nbsp;&nbsp; <ReceiptLongIcon />
+              &nbsp;&nbsp;&nbsp;&nbsp; <ReceiptLongIcon />
               &nbsp;&nbsp; 5 Lessons
             </Box>
 
@@ -111,7 +131,7 @@ const Slider = () => {
                 width: "max-content",
               }}
             >
-             &nbsp;&nbsp;&nbsp;&nbsp; <PersonOutlineOutlinedIcon />
+              &nbsp;&nbsp;&nbsp;&nbsp; <PersonOutlineOutlinedIcon />
               &nbsp;&nbsp; 56 Students
             </Box>
           </Box>

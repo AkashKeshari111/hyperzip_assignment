@@ -10,16 +10,30 @@ const Boxes = () => {
   return (
     <>
       {/* //left-box */}
-      <Box sx={{width:"60%"}}>
-        <VideoLink/>
-        <Diff_category/>
-        <RelatedCourses/>
+      <Box
+        sx={{ width: "60%", "@media (max-width: 850px)": { width: "100%" } }}
+      >
+        <VideoLink />
+        <Diff_category />
+        <RelatedCourses />
       </Box>
 
       {/* //right-box */}
-      <Box sx={{width:"32%"}}>
-        <Information/>
-        <CourseCategory/>
+      <Box
+        sx={{
+          width: "32%",
+          "@media (max-width: 850px)": {
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            marginTop: "100px",
+          },
+          "@media (max-width: 765px)":{ display: "block",width:"100%"}
+        }}
+      >
+        <Information />
+        <CourseCategory />
       </Box>
     </>
   );

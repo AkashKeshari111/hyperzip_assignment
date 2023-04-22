@@ -7,7 +7,7 @@ const ButtonHoc = ({el,onHandleClickCourse}) => {
     onClick={onHandleClickCourse}
     variant="contained"
     color="primary"
-    style={{ borderRadius: "4px",backgroundColor:"white" ,color:"black",textTransform:"capitalize",height:"90%"}}
+    style={{marginLeft:"15px", borderRadius: "4px",backgroundColor:"white" ,color:"black",textTransform:"capitalize",height:"90%"}}
   >{el}</Button>
   )
 }
