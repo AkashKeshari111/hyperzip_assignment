@@ -34,7 +34,7 @@ const RelatedCourses = () => {
         >
           <h3>Related Courses</h3>
           <Box
-        sx={{display:"grid",gridTemplateColumns:"repeat(2,1fr)",gridTemplateRows:"auto",gap:"2%",alignItems:"center",justifyContent:"center",width:"100%"}}
+        sx={{boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" ,display:"grid",gridTemplateColumns:"repeat(2,1fr)",gridTemplateRows:"auto",gap:"2%",alignItems:"center",justifyContent:"center",width:"100%"}}
          
         >
           {relatedCourses.map((el) => (   <Box  key={el.id} sx={{border:"1px solid lightGray",borderRadius:"8px"}}>

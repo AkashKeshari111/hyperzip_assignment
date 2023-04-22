@@ -5,7 +5,7 @@ const VideoLink = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <iframe
-        width="736"
+        width="100%"
         height="400"
         src="https://www.youtube.com/embed/e5Hc2B50Z7c"
         title="Education of School Intro Video for No Copyright free download"
