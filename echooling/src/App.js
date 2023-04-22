@@ -4,13 +4,16 @@ import Headers from "./components/Headers/Headers";
 import Footer from "./components/Footer/Footer";
 
 import AllRoutes from "./Router/AllRoutes";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 function App() {
   return (
-    <div className="App">
+    <div id="course" className="App">
            <Headers />
            <AllRoutes/>
           <Footer />
+          <ScrollUp/>
+         
     </div>
   );
 }
