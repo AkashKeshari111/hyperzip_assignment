@@ -51,7 +51,7 @@ const Slider = () => {
             alignItems: "flex-start",
             justifyContent: "center",
             textAlign: "left",
-            border: "1px solid red",
+          
 
             "@media (max-width: 1300px)": { width: "70%" },
             "@media (max-width: 850px)": { width: "90%" },
@@ -86,7 +86,7 @@ const Slider = () => {
               justifyContent: "space-evenly",
               width: "60%",
               color: "white",
-              border: "1px solid blue",
+
               width: "max-content",
               "@media (max-width: 500px)": {
                 width: "100%",
